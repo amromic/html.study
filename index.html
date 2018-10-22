@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <title>Patients Task</title> 
+        <link rel="stylesheet" type="text/css" href="stylesheets/vendor/bootstrap.css">
+        <link rel="stylesheet" href="stylesheets/custom.css" type="text/css" />
+        <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    </head>
+    <body>
+                <div class="sidebar">
+                <ul class="sidebar-nav">
+                    <li><a class='patient_nav' href="#">Patients</a></li>
+                    <li><a class='user_nav' href="#">Users</a></li>
+                </ul>
+            </div>
+
+        <div class='container-fluid'>
+   
+      <div class='navigation'>
+      <table  data-form='patient' class="patient-form table table-bordered table-striped">
+      <a href="#" data-form='patient' class='add-new-btn pull-right'>Add Patient</a>
+      <caption class='table-sub'>Patients List</caption>
+        <thead>
+        	<tr class='table-row'>
+        		<th>ID</th>
+        		<th>First Name</th>
+        		<th>Last name</th>
+        		<th>Gender</th>
+        		<th>DOB</th>
+        		<th>Active</th>
+        		<th>Creation</th>
+        	</tr>
+        </thead>
+        <tbody >            
+        </tbody> 
+        </table>
+
+
+      <table data-form='user' class="users-form table table-bordered table-striped">
+      <a href="#" data-form='user' class='add-new-btn pull-right'>Add User</a>
+      <caption class='table-sub'>Users List</caption>
+        <thead>
+          <tr class='table-row'>
+            <th>ID</th>
+            <th>First Name</th>
+            <th>Last name</th>
+            <th>Email</th>
+            <th>DOB</th>
+            <th>Gender</th>
+            <th>Creation</th>
+          </tr>
+        </thead>
+        <tbody >            
+        </tbody> 
+        </table>
+        </div> 
+  
+         <div class="patient-add-form">
+          <form class='form' action='/index.html' method="POST">
+          <fieldset>
+          <legend>Patient form</legend>
+          <div class="info">
+             <label>First name:</label>
+             <input class='input-form' type="text"  required autofocus> 
+             <label>Middle name:</label>
+             <input class='input-form' type="text"> 
+             <label>Last name:</label>
+             <input class='input-form' type="text" required><br>
+             <label>Status:</label><br>
+             <select class='input-form' name="status" required>
+                 <option value="0">Draft</option>
+                 <option value="1">Saved</option>
+                 <option value="2">Deleted</option>
+                 <option value="canceled">Canceled</option>
+             </select><br>
+             <label>Active:</label>
+             <input type="checkbox" required> 
+          </div>
+           
+           <div class="info2">
+               <label>Email:</label>
+               <input class='input-form' type="email" required><br>
+               <label>Date:</label><br>
+               <input class='input-form' type="date" required>  
+               <label>last check:</label>
+               <input class='input-form' type="date" id='today'>  
+                <label>Gender:</label><br>
+                <input type="radio" name="gender" value="1">Male
+                <input type="radio" name="gender" value="2">Female
+           </div>
+
+           <div class="form-btns">
+           <input class='submit-form' type="submit" name="" value='Submit'>
+           <button class='cancel-btn'>Cancel</button>
+           </div>
+           </fieldset>
+          </form>
+         </div>    
+         
+        <div class="user-add-form">
+
+          <form class='form' action='/index.html' method="POST">
+          <fieldset>
+          <legend>User form</legend>
+          <div class="info">
+             <label>First name:</label>
+             <input class='input-form' type="text"  required autofocus> 
+             <label>Middle name:</label>
+             <input class='input-form' type="text"> 
+             <label>Last name:</label>
+             <input class='input-form' type="text" required><br>
+             <label>Status:</label><br>
+             <select class='input-form' name="status" required>
+                 <option value="0">Draft</option>
+                 <option value="1">Saved</option>
+                 <option value="2">Deleted</option>
+                 <option value="canceled">Canceled</option>
+             </select><br>
+             <label>Active:</label>
+             <input type="checkbox" required> 
+          </div>
+           
+           <div class="info2">
+               <label>Email:</label>
+               <input class='input-form' type="email" required><br>
+               <label>Date:</label><br>
+               <input class='input-form' type="date" required>  
+               <label>last check:</label>
+               <input class='input-form' type="date" id='today'>  
+                <label>Gender:</label><br>
+                <input type="radio" name="gender" value="1">Male
+                <input type="radio" name="gender" value="2">Female
+           </div>
+
+           <div class="form-btns">
+           <input class='submit-form' type="submit" name="" value='Submit'>
+           <button class='cancel-btn'>Cancel</button>
+           </div>
+           </fieldset>
+          </form>
+       </div>
+
+ </div>
+
+ <!--container ends  -->
+        
+         <script type="text/javascript" src="app/min.js"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+    </body>
+</html>

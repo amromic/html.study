@@ -1,0 +1,68 @@
+/*Sidebar CSS*/
+
+.sidebar{
+
+position: fixed;
+height :100%;
+width  :160px;
+background-color: #111;
+overflow-x: hidden;
+padding-top: 20px; 
+
+}
+
+.sidebar-nav a {
+
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+}
+.sidebar-nav a:hover {
+
+ color:#7c95ad;   
+}
+
+.sidebar-nav {
+
+    list-style-type: none;
+}
+
+
+.container-fluid {
+	margin-left: 160px; /* Same as the width of the sidenav */ 
+    font-size: 15px;  
+    padding: 0px 10px;
+}
+
+/*Divs display: none*/
+[data-form], .user-add-form, .patient-add-form{
+	display: none;
+}
+
+/*New's form design */
+
+.form {
+    margin: 4px;
+    padding: 10px;
+}
+
+.info {
+    width: 50%;
+    position: fixed;
+  
+}
+.info2 {
+    margin-left: 60%;
+}
+.input-form {
+
+    width: 90%;
+    border-radius: 5px;
+}
+
+.form-btns {
+
+    margin-top: 50px;
+
+}
