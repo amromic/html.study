@@ -1,0 +1,17 @@
+.content-container {
+    margin-left: 180px;
+    padding: 0px 10px;
+}
+
+.screen {
+    display: none;
+    padding: 5px;
+}
+
+.patient-list {
+    display: block;
+}
+
+.heading {
+    float: left;
+}
