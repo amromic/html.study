@@ -6,6 +6,8 @@
   <link rel="stylesheet" type="text/css" href="stylesheets/vendor/bootstrap.min.css">
   <link rel="stylesheet" href="stylesheets/main.css" type="text/css" />
   <link rel="stylesheet" href="stylesheets/sidebar.css" type="text/css" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/mustache.js/2.3.0/mustache.min.js"></script>
+
 </head>
 
 <body>
@@ -23,7 +25,7 @@
       <a class='route pull-right btn btn-primary' data-panel='patient-edit'>Add</a>
       <table class="table table-bordered table-striped">
         <thead>
-          <tr class='table-row'>
+          <tr>
             <th>ID</th>
             <th>First Name</th>
             <th>Last name</th>
@@ -120,6 +122,17 @@
     </div>
 
   </div>
+
+  <!--   <script type="x-tmpl-mustache" id='output'>
+    {{#.}}
+    <tr>
+    <td>{{lname}}</td>
+    <td>{{DOB}}</td>
+    <td>{{gender}}</td>
+    <td>{{fname}}</td>
+    <td>{{mname}}</td>
+    {{/.}}
+  </script> -->
 
   <!--container ends  -->
   <script src="app/vendor/jquery-3.3.1.js"></script>

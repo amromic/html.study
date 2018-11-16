@@ -1,5 +1,7 @@
 $(document).ready(function () {
+
   renderTemplate();
+  dateNow();
 });
 
 $('.route').click(function () {
@@ -9,16 +11,9 @@ $('.route').click(function () {
 });
 
 function renderTemplate() {
-  var patientData = '';
-  $.each(patientsData, function (key, value) {
-    patientData += '<tr>';
-    patientData += '<td>' + value.ID + '</td>';
-    patientData += '<td>' + value.fname + '</td>';
-    patientData += '<td>' + value.lname + '</td>';
-    patientData += '<td>' + value.gender + '</td>';
-    patientData += '<td>' + value.DOB + '</td>';
-    patientData += '<td>' + value.Active + '</td>';
-    patientData += '<td>' + value.creationDate + '</td>';
-  });
-  $('.patient-table-body').append(patientData);
+
+  var template = "{{#.}}<tr><td>{{ID}}</td><td>{{fname}}</td><td>{{lname}}</td><td>{{gender}}</td><td>{{DOB}}</td><td>{{Active}}</td><td>{{creationDate}}</td></tr>{{/.}}";
+  // var template = $('#output').html(); 
+  var render = Mustache.render(template, patientsData);
+  $('.patient-table-body').html(render);
 }
